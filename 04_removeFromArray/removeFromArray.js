@@ -1,7 +1,7 @@
 const removeFromArray = function (arrayInput, ...argsToDelete) {
     let result = arrayInput
-    for (let argumentsLen = 0; argumentsLen < argsToDelete.length; argumentsLen++) {
-        let selectArg = argsToDelete[argumentsLen]
+    for (let argsIndex = 0; argsIndex < argsToDelete.length; argsIndex++) {
+        let selectArg = argsToDelete[argsIndex]
         for (let i = 0; i < arrayInput.length; i++)
             if (arrayInput[i] === selectArg) result.splice(i, 1)
     }
